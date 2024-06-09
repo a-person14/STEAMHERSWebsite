@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEAMHERS: Celebrating Women in STEM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="#" onclick="openTab('home')" class="logo-link">
+                <img src="Logo.png" alt="STEAMHERS Logo" class="logo">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" onclick="openTab('programs')">Our Programs</a></li>
+                    <li><a href="#" onclick="openTab('team')">Our Team</a></li>
+                    <li><a href="#" onclick="openTab('get-involved')">Get Involved</a></li>
+                    <li><a href="#" onclick="openTab('connect')">Connect With Us</a></li>
+                </ul>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.gmail.com" target="_blank"><img src="gmail-icon.png" alt="Twitter"></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><img src="insta-icon.png" alt="Instagram"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="section">
+        <div class="container">
+            <h2>Welcome to STEAMHERS</h2>
+            <p>At STEAMHERS, we believe that every woman has the potential to make significant contributions to the world of STEM.</p>
+        </div>
+    </section>
+
+    <section id="programs" class="section" style="display: none;">
+        <div class="container">
+            <h2>Our Programs</h2>
+            <p>1. STEAM courses</p>
+            <p>2. STEAM contests</p>
+            <p>3. Summer programs!</p>
+        </div>
+    </section>
+
+    <section id="team" class="section" style="display: none;">
+        <div class="container">
+            <h2>Our Team</h2>
+            <div class="profiles">
+                <div class="profile">
+                    <img src="profile1.png" alt="Profile Picture 1" class="profile-picture"> 
+                    <h3>Shreya Baronia</h3>
+                    <p>Your description goes here. You can add more details about yourself, your role, and your passion for STEM.</p>
+                </div>
+                <div class="profile">
+                    <img src="profile2.webp" alt="Profile Picture 2" class="profile-picture">
+                    <h3>Maider Escobar</h3>
+                    <p>Creating a nonprofit to empower women in STEAM is essential to driving meaningful change. The objective is to promote diversity, innovation and create equal opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="get-involved" class="section" style="display: none;">
+        <div class="container">
+            <h2>Get Involved</h2>
+            <p>Are you passionate about promoting gender equality in STEM? Do you want to teach girls STEAM principles? Positions are still open so <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNQG0Z-4quPhtSDAPYAlzJdH_xF249JdUGw8GyR8iK1_Kdag/viewform?usp=sf_link" target="_blank">apply</a> today!</p>
+        </div>
+    </section>
+
+    <section id="connect" class="section" style="display: none;">
+        <div class="container">
+            <h2>Connect With Us</h2>
+            <p>Stay updated on the latest news, events, and opportunities from STEAMHERS...</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 STEAMHERS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        var lastScrollTop = 0;
+        window.addEventListener('scroll', function() {
+            var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            var header = document.querySelector('header');
+
+            if (currentScroll > lastScrollTop) {
+                // Scrolling down
+                header.classList.add('collapsed');
+            } else {
+                // Scrolling up
+                header.classList.remove('collapsed');
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
+
+        function openTab(tabName) {
+            var i, sections;
+            sections = document.getElementsByClassName("section");
+            for (i = 0; i < sections.length; i++) {
+                sections[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+
+        // Set Home as the default tab
+        document.addEventListener("DOMContentLoaded", function() {
+            openTab('home');
+        });
+    </script>
+</body>
+</html>
