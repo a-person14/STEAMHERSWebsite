@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STEAMHERS: Celebrating Women in STEM</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add this to your styles.css or within a <style> tag in your HTML */
+        .profiles {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Adjust spacing between profiles as needed */
+        }
+
+        .profile {
+            flex: 1 1 calc(20% - 20px); /* Each profile takes up 50% of the row minus the gap */
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,14 +27,21 @@
             </a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#" onclick="openTab('about us')">About Us</a></li>
-                    <li><a href="#" onclick="openTab('programs')">Our Programs</a></li>
+                    <li><a href="#" onclick="openTab('about-us')">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#" onclick="openTab('programs')">Our Programs</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#" onclick="scrollToSection('steam-courses')">STEAM Courses</a></li>
+                            <li><a href="#" onclick="scrollToSection('steam-contests')">STEAM Contests</a></li>
+                            <li><a href="#" onclick="scrollToSection('summer-programs')">Summer Programs</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#" onclick="openTab('team')">Our Team</a></li>
                     <li><a href="#" onclick="openTab('get-involved')">Get Involved</a></li>
                 </ul>
                 <ul class="social-icons">
                     <li><a href="https://www.facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a></li>
-                    <li><a href="https://www.gmail.com" target="_blank"><img src="gmail-icon.png" alt="Twitter"></a></li>
+                    <li><a href="https://www.gmail.com" target="_blank"><img src="gmail-icon.png" alt="Gmail"></a></li>
                     <li><a href="https://www.instagram.com" target="_blank"><img src="insta-icon.png" alt="Instagram"></a></li>
                 </ul>
             </nav>
@@ -32,32 +52,54 @@
         <div class="container">
             <h2>Welcome to STEAMHERS</h2>
             <p>At STEAMHERS, we believe that every woman has the potential to make significant contributions to the world of STEM.</p>
-            <p>Currently, we hold classes and competitions online. <p>
+            <p>Currently, we hold classes and competitions online.</p>
         </div>
     </section>
 
     <section id="programs" class="section" style="display: none;">
         <div class="container">
             <h2>Our Programs</h2>
-            <p>1. STEAM courses</p>
-            <p>2. STEAM contests</p>
-            <p>3. Summer programs!</p>
+            <div id="steam-courses">
+                <h3>STEAM Courses</h3>
+                <p>Description of STEAM courses...</p>
+            </div>
+            <div id="steam-contests">
+                <h3>STEAM Contests</h3>
+                <p>Description of STEAM contests...</p>
+            </div>
+            <div id="summer-programs">
+                <h3>Summer Programs</h3>
+                <p>Description of summer programs...</p>
+            </div>
         </div>
     </section>
 
     <section id="team" class="section" style="display: none;">
+        <div class="team-banner">
+            <h2>Leadership</h2>
+        </div>
         <div class="container">
             <h2>Our Team</h2>
             <div class="profiles">
                 <div class="profile">
                     <img src="profile1.png" alt="Profile Picture 1" class="profile-picture"> 
                     <h3>Shreya Baronia</h3>
-                    <p>Your description goes here. You can add more details about yourself, your role, and your passion for STEM.</p>
+                    <p>Through previous experiences in STEAM teams, I faced alienation and struggled to connect with the boys who would talk amongst themselves. To encourage more women to join and offset the large male influence in STEAM, I founded this organization with Maider.</p>
                 </div>
                 <div class="profile">
                     <img src="profile2.webp" alt="Profile Picture 2" class="profile-picture">
                     <h3>Maider Escobar</h3>
                     <p>Creating a nonprofit to empower women in STEAM is essential to driving meaningful change. Our objective is to promote diversity, innovation and create equal opportunities.</p>
+                </div>
+                <div class="profile">
+                    <img src="profile3.webp" alt="Profile Picture 3" class="profile-picture"> 
+                    <h3>Jina Mukherjee</h3>
+                    <p>As an Indian woman, discrimination and sexualization began in childhood. Despite leadership roles, I was talked over and laughed at by boys, dismissed for being a girl. I joined STEAMHERS to help other girls realize they can, and will.</p>
+                </div>
+                <div class="profile">
+                    <img src="profile4.webp" alt="Profile Picture 4" class="profile-picture"> 
+                    <h3>Angelisa Wang</h3>
+                    <p>Growing up, I’ve always felt discriminated against in STEM because of my identity as a girl and I always thought it was unfair. By joining STEAMHers I hope to freely share my passion of STEM with others and help make stem more accessible to people all over the world.</p>
                 </div>
             </div>
         </div>
@@ -106,6 +148,13 @@
                 sections[i].style.display = "none";
             }
             document.getElementById(tabName).style.display = "block";
+        }
+
+        function scrollToSection(sectionId) {
+            var element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
         }
 
         // Set Home as the default tab
