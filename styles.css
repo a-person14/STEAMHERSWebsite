@@ -111,6 +111,7 @@ section h2 {
     flex-wrap: wrap;
     gap: 20px; /* Adjust spacing between profiles as needed */
     margin-top: 20px;
+    justify-content: space-between; /* Ensures even spacing between items */
 }
 
 .profile {
@@ -118,6 +119,7 @@ section h2 {
     box-sizing: border-box;
     text-align: center;
     margin-bottom: 20px;
+    max-width: calc(50% - 20px); /* Prevent profiles from stretching too wide */
 }
 
 .profile-picture {
@@ -131,6 +133,12 @@ section h2 {
 
 .profile h3 {
     margin: 10px 0 5px;
+}
+
+.profile p {
+    margin: 0 auto; /* Center the text */
+    max-width: 60%; /* Make the description span as wide as the profile */
+    text-align: justify; /* Ensure even text distribution */
 }
 
 footer {
