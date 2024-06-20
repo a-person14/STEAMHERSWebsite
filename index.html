@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STEAMHERS: Celebrating Women in STEM</title>
+    <title>STEAMHers: Celebrating Women in STEM</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container header-container">
-            <a href="#" onclick="openTab('home')" class="logo-link">
-                <img src="Logo.png" alt="STEAMHERS Logo" class="logo">
+            <a href="#" onclick="openTab('about-us')" class="logo-link">
+                <img src="Logo.png" alt="STEAMHers Logo" class="logo">
             </a>
             <nav>
                 <ul class="nav-links">
@@ -35,15 +35,7 @@
         </div>
     </header>
 
-    <section id="home" class="section">
-        <div class="container">
-            <h2>Welcome to STEAMHERS</h2>
-            <p>At STEAMHERS, we believe that every woman has the potential to make significant contributions to the world of STEM.</p>
-            <p>Currently, we hold classes and competitions online.</p>
-        </div>
-    </section>
-
-       <section id="about-us" class="section" style="display: none;">
+    <section id="about-us" class="section" style="display: none;">
         <div class="container">
             <h2>About Us</h2>
             <p>STEAMHERS is a nonprofit organization dedicated to empowering women in Science, Technology, Engineering, Arts, and Mathematics (STEAM). Founded by Shreya Baronia and Maider Escobar, STEAMHERS aims to create a supportive community for women to thrive in traditionally male-dominated fields.</p>
@@ -63,6 +55,26 @@
             <div id="steam-courses">
                 <h3>STEAM Courses</h3>
                 <p>Description of STEAM courses...</p>
+                <p>Description of STEAM courses...</p>
+                <p>Description of STEAM courses...</p>
+                <p>Description of STEAM courses...</p>
+                <p>Description of STEAM courses...</p>
+                <p>Description of STEAM courses...</p>
+                <p>Description of STEAM courses...</p>
+                <p>Description of STEAM courses...</p>
+                <p>Description of STEAM courses...</p>
+                <p>Description of STEAM courses...</p>
+                <p>Description of STEAM courses...</p>
+                <p>Description of STEAM courses...</p>
+                <p>Description of STEAM courses...</p>
+                <p>Description of STEAM courses...</p>
+                <p>Description of STEAM courses...</p>
+                <p>Description of STEAM courses...</p>
+                <p>Description of STEAM courses...</p>
+                <p>Description of STEAM courses...</p>
+                <p>Description of STEAM courses...</p>
+                <p>Description of STEAM courses...</p>
+                <p>Description of STEAM courses...</p>
             </div>
             <div id="steam-contests">
                 <h3>STEAM Contests</h3>
@@ -77,10 +89,9 @@
 
     <section id="team" class="section" style="display: none;">
         <div class="team-banner">
-            <h2>Leadership</h2>
+            <h2>Founders</h2>
         </div>
         <div class="container">
-            <h2>Our Team</h2>
             <div class="profiles">
                 <div class="profile">
                     <img src="profile1.png" alt="Profile Picture 1" class="profile-picture"> 
@@ -95,7 +106,7 @@
                 <div class="profile">
                     <img src="profile3.webp" alt="Profile Picture 3" class="profile-picture"> 
                     <h3>Jina Mukherjee</h3>
-                    <p>As an Indian woman, discrimination and sexualization began in childhood. Despite leadership roles, I was talked over and laughed at by boys, dismissed for being a girl. I joined STEAMHERS to help other girls realize they can, and will.</p>
+                    <p>As an Indian woman, discrimination and sexualization began in childhood. Despite leadership roles, I was talked over and laughed at by boys, dismissed for being a girl. I joined STEAMHers to help other girls realize they can, and will.</p>
                 </div>
                 <div class="profile">
                     <img src="profile4.webp" alt="Profile Picture 4" class="profile-picture"> 
@@ -105,7 +116,7 @@
                 <div class="profile">
                     <img src="profile5.webp" alt="Profile Picture 5" class="profile-picture"> 
                     <h3>Sabrina Tasnim Shoshee</h3>
-                    <p>I joined STEAMHERS because I believe in the transformative power of education and equality. Growing up, I saw the immense potential in my peers that often went untapped due to a lack of resources and support. With this organization, I aim to help bridge the gender gap in STEAM fields.</p>
+                    <p>I joined STEAMHers because I believe in the transformative power of education and equality. Growing up, I saw the immense potential in my peers that often went untapped due to a lack of resources and support. With this organization, I aim to help bridge the gender gap in STEAM fields.</p>
                 </div>
             </div>
         </div>
@@ -121,13 +132,13 @@
     <section id="connect" class="section" style="display: none;">
         <div class="container">
             <h2>Connect With Us</h2>
-            <p>Stay updated on the latest news, events, and opportunities from STEAMHERS...</p>
+            <p>Stay updated on the latest news, events, and opportunities from STEAMHers...</p>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 STEAMHERS. All rights reserved.</p>
+            <p>&copy; 2024 STEAMHers. All rights reserved.</p>
         </div>
     </footer>
 
@@ -157,6 +168,7 @@
         }
 
         function scrollToSection(sectionId) {
+            openTab("programs");
             var element = document.getElementById(sectionId);
             if (element) {
                 element.scrollIntoView({ behavior: 'smooth' });

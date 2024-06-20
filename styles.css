@@ -21,6 +21,7 @@ header {
     padding: 2px 0; /* Reduced padding */
     position: relative;
     transition: top 0.3s;
+    z-index: 1;
 }
 
 .header-container {
@@ -66,6 +67,8 @@ nav ul.nav-links li .dropdown-content {
 
 nav ul.nav-links li .dropdown-content li {
     padding: 1px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 nav ul.nav-links li .dropdown-content li a {
@@ -148,12 +151,29 @@ footer {
     text-align: center;
 }
 
+.team-banner h2 {
+    font-size: 2.5em; /* Adjust the font size as needed */
+    margin-top: 120px; /* Adds space from the top */
+    margin-bottom: 20px;
+    text-align: center; /* Centers the text */
+}
+
+.team-banner-container {
+    width: 100%;
+    margin: 0; /* Remove margin to ensure full width */
+    padding: 0; /* Remove padding to ensure full width */
+}
+
 .team-banner {
-    background-color: #DAA6C8;
+    background-color:#8B5991;
     color: #fff;
     padding: 20px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: 0px; /* Remove any margin that could affect positioning */
+    margin-bottom: -120px;
     width: 100%;
     box-sizing: border-box; /* Ensure padding and border are included in the width */
+    position: relative; /* Use relative positioning */
+    top: -150px;
+    z-index: 0;
 }
