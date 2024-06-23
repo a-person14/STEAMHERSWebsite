@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    background-color: #FFC0CB; /* Pink background */
+    background-color: #DAA6C8; /* Pink background */
     color: #fff;
     padding: 10px 0;
     position: relative;
@@ -109,7 +109,6 @@ section {
 
 section h2 {
     font-size: 2em;
-    color: #FF69B4; /* Dark pink */
     margin-bottom: 20px;
     text-align: center;
 }
