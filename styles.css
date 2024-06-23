@@ -6,6 +6,8 @@ html, body, h1, h2, p, ul, li {
 
 /* Global styles */
 body {
+    background-color: #f9f9f9;
+    color: #333;
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
@@ -17,8 +19,9 @@ body {
 }
 
 header {
-    background-color: #DAA6C8;
-    padding: 2px 0; /* Reduced padding */
+    background-color: #FFC0CB; /* Pink background */
+    color: #fff;
+    padding: 10px 0;
     position: relative;
     transition: top 0.3s;
     z-index: 1;
@@ -105,8 +108,10 @@ section {
 }
 
 section h2 {
-    font-size: 1.5em;
+    font-size: 2em;
+    color: #FF69B4; /* Dark pink */
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .profiles {
@@ -149,6 +154,9 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .team-banner h2 {
