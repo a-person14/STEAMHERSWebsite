@@ -59,57 +59,80 @@ nav ul.nav-links li {
     margin-left: 20px;
 }
 
-nav ul.nav-links li .dropdown-content {
+nav ul.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+nav ul.nav-links li a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+nav ul.nav-links li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav ul.nav-links li.dropdown .dropdown-content {
     display: none;
     position: absolute;
     background-color: #DAA6C8;
+    color: #333;
     min-width: 200px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
-nav ul.nav-links li .dropdown-content li {
+nav ul.nav-links li.dropdown .dropdown-content li {
     padding: 1px 10px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-nav ul.nav-links li .dropdown-content li a {
-    color: #333;
+nav ul.nav-links li.dropdown .dropdown-content li a {
+    color: #ffffff;
     text-decoration: none;
 }
 
-nav ul.nav-links li .dropdown-content li a:hover {
-    background-color: #ddd;
+nav ul.nav-links li.dropdown .dropdown-content li a:hover {
+    background-color: #a1e8e7;
+    text-decoration: underline;
 }
 
-nav ul.nav-links li:hover .dropdown-content {
-    display: block;
+.social-icons {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 20px;
 }
 
-nav ul.social-icons {
-    margin-left: 20px; /* Space between nav links and social icons */
+.social-icons li {
+    margin-left: 10px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 16px;
+.social-icons li a {
+    display: inline-block;
 }
 
-nav ul.social-icons li a img {
-    width: 40px; /* Icon size */
-    height: 40px;
+.social-icons li a img {
+    height: 20px;
 }
 
-section {
-    padding: 50px 0;
+/* Section styles */
+.section {
+    padding: 60px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
 }
 
-section h2 {
-    font-size: 2em;
+.section .container h2 {
     margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #DAA6C8; /* Pink text color */
     text-align: center;
 }
 
@@ -139,7 +162,15 @@ section h2 {
 }
 
 .profile h3 {
-    margin: 10px 0 5px;
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #DAA6C8; /* Pink text color */
+}
+
+.profile h4 {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #555;
 }
 
 .profile p {
@@ -171,7 +202,7 @@ footer {
 }
 
 .team-banner {
-    background-color:#8B5991;
+    background-color:#DAA6C8;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -183,7 +214,6 @@ footer {
     top: -150px;
     z-index: 0;
 }
-/* About Us Section */
 .about-us {
     padding: 50px 0;
     background-color: #f9f9f9;
@@ -299,5 +329,5 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-    margin-top
-
+    margin-top: 20px;
+}
