@@ -497,7 +497,7 @@ footer {
 
 .accordion-content {
     background: #fff;
-    padding: 20px;
+    padding: 10px;
     display: none;
     animation: fadeIn 0.3s ease;
 }
@@ -514,7 +514,7 @@ footer {
 }
 
 .motivational-box {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 @keyframes fadeIn {
