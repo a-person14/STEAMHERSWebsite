@@ -63,25 +63,33 @@
                 <h3>STEAM Courses</h3>
                 <div class="accordion">
                     <div class="accordion-item">
-                        <button class="accordion-header" onclick="toggleAccordion(this)">Competition Math</button>
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            Competition Math <span class="accordion-icon">▼</span>
+                        </div>
                         <div class="accordion-content">
                             <p>Advanced problem-solving techniques and competition preparation.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <button class="accordion-header" onclick="toggleAccordion(this)">Geometry/Algebra 2/Trigonometry</button>
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            Geometry/Algebra 2/Trigonometry <span class="accordion-icon">▼</span>
+                        </div>
                         <div class="accordion-content">
                             <p>In-depth exploration of mathematical concepts and applications.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <button class="accordion-header" onclick="toggleAccordion(this)">Neuroscience</button>
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            Neuroscience <span class="accordion-icon">▼</span>
+                        </div>
                         <div class="accordion-content">
                             <p>Understanding the brain's structure, function, and disorders.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <button class="accordion-header" onclick="toggleAccordion(this)">Web Development</button>
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            Web Development <span class="accordion-icon">▼</span>
+                        </div>
                         <div class="accordion-content">
                             <p>Building modern, responsive websites and web applications.</p>
                         </div>
@@ -93,13 +101,17 @@
                 <p>We organize STEAM virtual competitions for girls and women, offering exciting prizes to the winners. These competitions are designed to inspire creativity, innovation, and a passion for STEAM subjects. Remember, "The future belongs to those who believe in the beauty of their dreams." Let's make those dreams a reality together!</p>
                 <div class="accordion">
                     <div class="accordion-item">
-                        <button class="accordion-header" onclick="toggleAccordion(this)">Math Contest (Grades 6-8)</button>
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            Math Contest (Grades 6-8) <span class="accordion-icon">▼</span>
+                        </div>
                         <div class="accordion-content">
                             <p>A challenging math contest designed for middle schoolers.</p>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <button class="accordion-header" onclick="toggleAccordion(this)">Physics Contest (Grades 9-11)</button>
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            Physics Contest (Grades 9-11) <span class="accordion-icon">▼</span>
+                        </div>
                         <div class="accordion-content">
                             <p>An engaging physics contest for high school students.</p>
                         </div>
@@ -112,7 +124,7 @@
             </div>
         </div>
     </section>
-    
+
 
     <section id="team" class="section" style="display: none;">
         <div class="container">
@@ -157,7 +169,7 @@
         </div>
     </section>
 
-    
+
 
     <section id="get-involved" class="section" style="display: none;">
         <div class="container">
@@ -237,9 +249,23 @@
             openTab('about-us');
         });
 
-        function toggleAccordion(button) {
-        const content = button.nextElementSibling;
-        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        function toggleAccordion(element) {
+            const header = element;
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('.accordion-icon');
+
+        // Toggle active class
+            header.classList.toggle('active');
+
+        // Toggle content display
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+
+        // Rotate icon
+            icon.style.transform = icon.style.transform === "rotate(180deg)" ? "rotate(0deg)" : "rotate(180deg)";
         }
     </script>
 </body>
