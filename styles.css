@@ -158,12 +158,12 @@ nav ul.nav-links li.dropdown .dropdown-content li a:hover {
     border-bottom: 1px solid #ddd;
 }
 
-.section .container h2 {
+/* .section .container h2 {
     margin-bottom: 20px;
     font-size: 2.5em;
-    color: #DAA6C8; /* Pink text color */
+    color: #DAA6C8; /* Pink text color /
     text-align: center;
-}
+} */
 
 .profiles {
     display: flex;
@@ -377,16 +377,25 @@ footer {
     margin-bottom: 30px;
 }
 
-.program-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
+.program-section > h2 {
     font-size: 2.5em;
-    color: #6a1b9a;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-bottom: 3px solid #6a1b9a;
-    display: inline-block;
-    padding-bottom: 10px;
+    color: #790084;
+    margin-bottom: 20px;
+    position: relative;
+    width: auto;
+    text-align: center;
+}
+
+.program-section h2::after {
+    content: "";
+    display: block;
+    width: 26%; /* Adjust the width of the underline */
+    height: 2px; /* Adjust the thickness of the underline */
+    background-color: #cea9e4;
+    position: absolute;
+    bottom: -5px; /* Adjust this value to add space between text and underline */
+    left: 50%; /* Center align horizontally */
+    transform: translateX(-51%); /* Center align horizontally */
 }
 
 
