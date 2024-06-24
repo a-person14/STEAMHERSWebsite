@@ -252,7 +252,7 @@ footer {
     margin-bottom: 20px;
     font-size: 1.1em;
     line-height: 1.8;
-    text-align: justify;
+    text-align: center;
 }
 
 .about-image {
@@ -271,7 +271,7 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #fff; /* White text color */
-    text-align: justify;
+    text-align: center;
 }
 
 .about-us-banner {
@@ -290,6 +290,19 @@ footer {
     margin: 20px 0; /* Adjust spacing between banners */
     border-radius: 10px;
 }
+
+.centered-content {
+  text-align: center;
+}
+
+.centered-content .about-us-banner,
+.centered-content .container,
+.centered-content .sub-banner,
+.centered-content .about-box {
+  display: inline-block;
+  text-align: left; /* Reset text alignment for inner elements if needed */
+}
+
 .social-icons {
     display: flex;
     list-style-type: none;
