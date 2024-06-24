@@ -394,7 +394,7 @@ footer {
 }
 
 .accordion-header {
-    background: #8a44b5;
+    background: #CF5387;
     color: #fff;
     padding: 15px;
     font-size: 1.2em;
@@ -406,7 +406,7 @@ footer {
 }
 
 .accordion-header:hover {
-    background: #4a0072;
+    background: #a64c72;
 }
 
 .accordion-icon {
