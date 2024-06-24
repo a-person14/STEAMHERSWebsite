@@ -452,6 +452,70 @@ footer {
     font-size: 1em;
     color: #333;
 }
+/* Accordion Styles */
+.accordion {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    background: #CF5387;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.3s;
+}
+
+.accordion-header:hover {
+    background: #a64c72;
+}
+
+.accordion-icon {
+    font-size: 1.5em;
+    transition: transform 0.3s;
+}
+
+.accordion-header.active .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    background: #fff;
+    padding: 20px;
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.accordion-content p {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.motivational-box {
+    margin-top: 40px;
+}
 
 @keyframes fadeIn {
     from { opacity: 0; }
