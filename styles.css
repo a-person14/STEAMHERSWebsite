@@ -604,3 +604,118 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Banner styling */
+.mission-banner,
+.programs-banner {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 6px solid #F5B7B1
+    border-right: 6px solid #BB8FCE
+    text-align: left;
+}
+
+.banner-left {
+    border-left-color: #F5B7B1
+}
+
+.banner-right {
+    border-left: none;
+    border-right-color: #BB8FCE
+}
+
+.banner-left p,
+.banner-right p {
+    margin: 0; 
+    padding: 0;
+}
+
+/* Positioning banners */
+.banner-left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 110px; 
+}
+
+.banner-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 110px; 
+}
+/* Banner styling */
+.info-banner {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 6px solid #FA8072
+    border-right: 6px solid #FDEDEC
+    text-align: left;
+}
+
+.banner-left {
+    border-left-color: #FA8072
+}
+
+.banner-right {
+    border-left: none;
+    border-right-color: #FDEDEC
+}
+
+.info-banner h3 {
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+.info-banner p {
+    margin-bottom: 0;
+}
+
+/* Positioning banners */
+.banner-left {
+    position: relative;
+}
+
+.banner-right {
+    position: relative;
+}
+
+/* Home banner */
+.home-banner {
+    background-color: #D2B4DE 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.home-banner h2 {
+    margin: 0;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home-info {
+    flex: 1 1 50%;
+    padding: 20px;
+}
+
+.home-image {
+    flex: 1 1 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+.home-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
