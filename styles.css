@@ -158,12 +158,12 @@ nav ul.nav-links li.dropdown .dropdown-content li a:hover {
     border-bottom: 1px solid #ddd;
 }
 
-.section .container h2 {
+/* .section .container h2 {
     margin-bottom: 20px;
     font-size: 2.5em;
-    color: #DAA6C8; /* Pink text color */
+    color: #DAA6C8; /* Pink text color /
     text-align: center;
-}
+} */
 
 .profiles {
     display: flex;
@@ -424,16 +424,25 @@ footer {
     margin-bottom: 30px;
 }
 
-.program-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
+.program-section > h2 {
     font-size: 2.5em;
-    color: #6a1b9a;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-bottom: 3px solid #6a1b9a;
-    display: inline-block;
-    padding-bottom: 10px;
+    color: #790084;
+    margin-bottom: 20px;
+    position: relative;
+    width: auto;
+    text-align: center;
+}
+
+.program-section h2::after {
+    content: "";
+    display: block;
+    width: 26%; /* Adjust the width of the underline */
+    height: 2px; /* Adjust the thickness of the underline */
+    background-color: #cea9e4;
+    position: absolute;
+    bottom: -5px; /* Adjust this value to add space between text and underline */
+    left: 50%; /* Center align horizontally */
+    transform: translateX(-51%); /* Center align horizontally */
 }
 
 
@@ -615,4 +624,145 @@ footer {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+}
+/* Pink accordion style */
+.pink-accordion {
+    background-color: pink;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.pink-accordion h3 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Science photo style */
+.science-photo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.science-photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Banner styling */
+.mission-banner,
+.programs-banner {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 6px solid #F5B7B1
+    border-right: 6px solid #BB8FCE
+    text-align: left;
+}
+
+.banner-left {
+    border-left-color: #F5B7B1
+}
+
+.banner-right {
+    border-left: none;
+    border-right-color: #BB8FCE
+}
+
+.banner-left p,
+.banner-right p {
+    margin: 0; 
+    padding: 0;
+}
+
+/* Positioning banners */
+.banner-left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 110px; 
+}
+
+.banner-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 110px; 
+}
+/* Banner styling */
+.info-banner {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 6px solid #FA8072
+    border-right: 6px solid #FDEDEC
+    text-align: left;
+}
+
+.banner-left {
+    border-left-color: #FA8072
+}
+
+.banner-right {
+    border-left: none;
+    border-right-color: #FDEDEC
+}
+
+.info-banner h3 {
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+.info-banner p {
+    margin-bottom: 0;
+}
+
+/* Positioning banners */
+.banner-left {
+    position: relative;
+}
+
+.banner-right {
+    position: relative;
+}
+
+/* Home banner */
+.home-banner {
+    background-color: #D2B4DE 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.home-banner h2 {
+    margin: 0;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home-info {
+    flex: 1 1 50%;
+    padding: 20px;
+}
+
+.home-image {
+    flex: 1 1 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+.home-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
