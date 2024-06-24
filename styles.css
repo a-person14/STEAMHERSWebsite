@@ -237,6 +237,31 @@ footer {
     height: auto;
     border-radius: 10px;
 }
+.about-box {
+    background-color: #DAA6C8; /* Pink background for about boxes */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff; /* White text color */
+    text-align: justify;
+}
+
+.about-us-banner {
+    background-color: #8B5991; /* Same color as the Founders section */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sub-banner {
+    background-color: #DAA6C8; /* Pink background for sub-banners */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 0; /* Adjust spacing between banners */
+    border-radius: 10px;
+}
 .social-icons {
     display: flex;
     list-style-type: none;
@@ -298,17 +323,6 @@ footer {
 .contact-info ul li {
     margin-bottom: 5px; /* Adjust spacing between contact info items */
 }
-
-/* About Us Banner */
-.about-us-banner {
-    background-color: #8B5991; /* Same color as the Founders section */
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    margin-top: -60px;
-    margin-bottom: 20px;
-}
-
 
 .program-section {
     margin-bottom: 30px;
