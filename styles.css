@@ -303,6 +303,14 @@ footer {
   text-align: left; /* Reset text alignment for inner elements if needed */
 }
 
+.pink-box {
+  background-color: pink;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+
 .social-icons {
     display: flex;
     list-style-type: none;
