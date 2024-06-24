@@ -521,5 +521,9 @@ footer {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-
+#about-us {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStqPzy-YyQcdqhyWAwgKy-fYYjjtgW-30m-A&s');
+  background-size: cover;
+  background-position: center;
+}
 
