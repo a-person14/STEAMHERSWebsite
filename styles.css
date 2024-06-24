@@ -309,3 +309,67 @@ footer {
     margin-bottom: 20px;
 }
 
+
+.program-section {
+    margin-bottom: 30px;
+}
+
+.program-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #6a1b9a;
+}
+
+.program-section h3 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #6a1b9a;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.accordion-header {
+    background: #CF5387;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 1.1em;
+    border-radius: 5px 5px 0 0;
+}
+
+.accordion-header:hover {
+    background: #4a148c;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+    border-radius: 0 0 5px 5px;
+}
+
+.accordion-content p {
+    margin: 0;
+    color: #333;
+    font-size: 1em;
+}
+
+
