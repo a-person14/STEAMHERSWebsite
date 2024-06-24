@@ -367,8 +367,8 @@ footer {
     align-items: center;
     padding: 15px 30px;
     font-size: 16px;
-    color: ##DAA6C8
-    gap: 10px
+    color: #DAA6C8;
+    gap: 10px;
     border: none;
     border-radius: 50px;
     background: linear-gradient(270deg, #DAA6C8,#CF5387);
@@ -657,8 +657,8 @@ footer {
     background-color: #f0f0f0;
     padding: 20px;
     margin-bottom: 20px;
-    border-left: 6px solid #F5B7B1
-    border-right: 6px solid #BB8FCE
+    border-left: 6px solid #F5B7B1;
+    border-right: 6px solid #BB8FCE;
     text-align: left;
 }
 
@@ -698,8 +698,8 @@ footer {
     background-color: #f0f0f0;
     padding: 20px;
     margin-bottom: 20px;
-    border-left: 6px solid #FA8072
-    border-right: 6px solid #FDEDEC
+    border-left: 6px solid #FA8072;
+    border-right: 6px solid #FDEDEC;
     text-align: left;
 }
 
@@ -732,7 +732,7 @@ footer {
 
 /* Home banner */
 .home-banner {
-    background-color: #D2B4DE 
+    background-color: #D2B4DE; 
     color: #fff;
     padding: 20px;
     text-align: center;
