@@ -98,7 +98,7 @@ nav ul.nav-links li.dropdown .dropdown-content li a {
 }
 
 nav ul.nav-links li.dropdown .dropdown-content li a:hover {
-    background-color: #a1e8e7;
+    color: #ffffff;
     text-decoration: underline;
 }
 
@@ -153,8 +153,8 @@ nav ul.nav-links li.dropdown .dropdown-content li a:hover {
 }
 
 .profile-picture {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
@@ -329,5 +329,6 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: -60px;
+    margin-bottom: 20px;
 }
