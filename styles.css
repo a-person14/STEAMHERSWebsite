@@ -102,6 +102,33 @@ nav ul.nav-links li.dropdown .dropdown-content li a:hover {
     color: #ffffff;
     text-decoration: underline;
 }
+.home-banner {
+    background-color: #004c8b;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+}
+.home-banner h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.home-banner p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+.btn {
+    background-color: #f8c12f;
+    color: #004c8b;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #e0b520;
+}
 
 .social-icons {
     display: flex;
