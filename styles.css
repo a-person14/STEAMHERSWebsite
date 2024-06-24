@@ -559,3 +559,13 @@ footer {
 .home-banner .btn:hover {
   background-color: #e0b520;
 }
+.about-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
