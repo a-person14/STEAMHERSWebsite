@@ -569,3 +569,29 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+/* Pink accordion style */
+.pink-accordion {
+    background-color: pink;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.pink-accordion h3 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Science photo style */
+.science-photo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.science-photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
