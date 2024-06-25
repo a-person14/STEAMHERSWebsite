@@ -679,17 +679,17 @@ footer {
 .banner-left {
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 10%;
     transform: translateY(-50%);
-    width: 110px; 
+    width: 90px; 
 }
 
 .banner-right {
     position: absolute;
     right: 0;
-    top: 50%;
+    top: 10%;
     transform: translateY(-50%);
-    width: 110px; 
+    width: 90px; 
 }
 /* Banner styling */
 .info-banner {
