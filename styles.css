@@ -573,15 +573,12 @@ footer {
     margin-top: 20px;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
 #about-us {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStqPzy-YyQcdqhyWAwgKy-fYYjjtgW-30m-A&s');
   background-size: cover;
   background-position: center;
 }
+
 .home-banner {
   background-size: cover;
   background-position: center;
@@ -615,6 +612,7 @@ footer {
 .home-banner .btn:hover {
   background-color: #e0b520;
 }
+
 .about-image {
   flex: 1 1 25%; /* Adjust the width percentage as needed */
   text-align: center;
@@ -732,10 +730,12 @@ footer {
 
 /* Home banner */
 .home-banner {
-    background-color: #D2B4DE; 
+    background-color: #9e3576; 
     color: #fff;
-    padding: 20px;
+    padding: 70px;
     text-align: center;
+    margin-top: -300px;
+    padding-top: 300px;
 }
 
 .home-banner h2 {
