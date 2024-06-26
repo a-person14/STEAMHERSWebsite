@@ -880,3 +880,20 @@ footer {
 .stat-item p {
     margin: 0;
 }
+.motivational-banner {
+    background-color: #f0f0f0;
+    color: #fff; /* Text color */
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.motivational-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.motivational-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
