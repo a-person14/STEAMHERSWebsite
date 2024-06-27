@@ -12,6 +12,14 @@ body {
     line-height: 1.6;
 }
 
+.main-heading {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333; /* Adjust color to match your design */
+    text-transform: uppercase; /* Make text uppercase */
+    letter-spacing: 2px; /* Add letter spacing for emphasis */
+}
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -437,6 +445,71 @@ nav ul.nav-links li.dropdown .dropdown-content li a:hover {
     padding: 15px;
     border-radius: 0 0 10px 10px;
     box-shadow: 0 -1px 10px rgba(0,0,0,0.1);
+}
+
+.contact-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+.contact-banner {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.contact-banner h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.contact-banner p {
+    margin: 10px 0 0 0;
+    font-size: 1.2em;
+}
+
+.contact {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.contact-inputs {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+}
+
+.contact button:hover {
+    background-color: #45a049;
+}
+
+.contact-info {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 -1px 10px rgba(0,0,0,0.1);
+    text-align: left;
 }
 
 .contact-info h3 {
