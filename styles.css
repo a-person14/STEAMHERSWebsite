@@ -103,16 +103,36 @@ nav ul.nav-links li.dropdown .dropdown-content li a:hover {
     text-decoration: underline;
 }
 
+/* Home page*/
 .home-banner {
-    background-color: #8b0066;
-    color: #ffffff;
+    background-color: #9e3576; 
+    color: #fff;
+    padding: 70px;
     text-align: center;
-    padding: 100px 0;
+    margin-top: -300px;
+    padding-top: 300px;
 }
 .home-banner h1 {
     font-size: 3em;
     margin-bottom: 20px;
 }
+
+.home-banner h2 {
+    margin: 0;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home-info {
+    flex: 1 1 50%;
+    padding: 20px;
+}
+
 .home-banner p {
     font-size: 1.5em;
     margin-bottom: 40px;
@@ -130,7 +150,21 @@ nav ul.nav-links li.dropdown .dropdown-content li a:hover {
 .btn:hover {
     background-color: #e0b520;
 }
+.home-image {
+    flex: 1 1 50%;
+    padding: 20px;
+    text-align: center;
+}
 
+.home-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/*Social Icons*/
 .social-icons {
     display: flex;
     align-items: center;
@@ -158,12 +192,7 @@ nav ul.nav-links li.dropdown .dropdown-content li a:hover {
     border-bottom: 1px solid #ddd;
 }
 
-/* .section .container h2 {
-    margin-bottom: 20px;
-    font-size: 2.5em;
-    color: #DAA6C8; /* Pink text color /
-    text-align: center;
-} */
+/*Our Team page*/
 
 .profiles {
     display: flex;
@@ -209,15 +238,7 @@ nav ul.nav-links li.dropdown .dropdown-content li a:hover {
     text-align: justify; /* Ensure even text distribution */
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    position: relative;
-    width: 100%;
-    z-index: 1;
-}
+/* About Us Page */
 .about-us {
     padding: 50px 0;
     background-color: #f9f9f9;
@@ -311,23 +332,7 @@ footer {
 }
 
 
-.social-icons {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0; /* Adjust spacing as needed */
-    justify-content: center; /* Center align social icons */
-}
-
-.social-icons li {
-    margin: 0 10px; /* Adjust spacing between social icons */
-}
-
-.social-icons li a img {
-    width: 40px;
-    height: 40px;
-}
-
+/*Get Involved Page*/
 .contact-us {
     margin-top: 20px;
     text-align: right;
@@ -375,6 +380,17 @@ footer {
     cursor: pointer;
 }
 
+/*Footer Information*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
 .newsletter-signup {
     margin-top: 20px;
     text-align: center; /* Center align newsletter form */
@@ -406,20 +422,7 @@ footer {
     cursor: pointer;
 }
 
-.contact-info {
-    margin-top: 20px;
-    text-align: center; /* Center align contact info */
-}
-
-.contact-info ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.contact-info ul li {
-    margin-bottom: 5px; /* Adjust spacing between contact info items */
-}
-
+/*Our Programs section*/
 .program-section {
     margin-bottom: 30px;
 }
@@ -444,7 +447,6 @@ footer {
     left: 50%; /* Center align horizontally */
     transform: translateX(-51%); /* Center align horizontally */
 }
-
 
 .program-section h3 {
     font-size: 2em;
@@ -518,7 +520,6 @@ footer {
     color: #333;
 }
 
-
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -528,199 +529,7 @@ footer {
     margin-top: 20px;
 }
 
-#about-us {
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStqPzy-YyQcdqhyWAwgKy-fYYjjtgW-30m-A&s');
-  background-size: cover;
-  background-position: center;
-}
 
-.home-banner {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding: 100px 0;
-  color: #fff;
-}
-
-.home-banner h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
-}
-
-.home-banner p {
-  font-size: 1.5em;
-  margin-bottom: 40px;
-}
-
-.home-banner .btn {
-  background-color: #f8c12f;
-  color: #004c8b;
-  border: none;
-  padding: 15px 30px;
-  font-size: 1.2em;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.home-banner .btn:hover {
-  background-color: #e0b520;
-}
-
-.about-image {
-  flex: 1 1 25%; /* Adjust the width percentage as needed */
-  text-align: center;
-}
-
-.about-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-/* Pink accordion style */
-.pink-accordion {
-    background-color: pink;
-    padding: 15px;
-    margin-top: 20px;
-}
-
-.pink-accordion h3 {
-    color: white;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-/* Science photo style */
-.science-photo {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.science-photo img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Banner styling */
-.mission-banner,
-.programs-banner {
-    background-color: #f0f0f0;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-left: 6px solid #F5B7B1;
-    border-right: 6px solid #BB8FCE;
-    text-align: left;
-}
-
-.banner-left {
-    border-left-color: #F5B7B1
-}
-
-.banner-right {
-    border-left: none;
-    border-right-color: #BB8FCE
-}
-
-.banner-left p,
-.banner-right p {
-    margin: 0; 
-    padding: 0;
-}
-
-/* Positioning banners */
-.banner-left {
-    position: absolute;
-    left: 0;
-    top: 10%;
-    transform: translateY(-50%);
-    width: 90px; 
-}
-
-.banner-right {
-    position: absolute;
-    right: 0;
-    top: 10%;
-    transform: translateY(-50%);
-    width: 90px; 
-}
-/* Banner styling */
-.info-banner {
-    background-color: #f0f0f0;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-left: 6px solid #FA8072;
-    border-right: 6px solid #FDEDEC;
-    text-align: left;
-}
-
-.banner-left {
-    border-left-color: #FA8072
-}
-
-.banner-right {
-    border-left: none;
-    border-right-color: #FDEDEC
-}
-
-.info-banner h3 {
-    margin-top: 0;
-    font-size: 1.3em;
-}
-
-.info-banner p {
-    margin-bottom: 0;
-}
-
-/* Positioning banners */
-.banner-left {
-    position: relative;
-}
-
-.banner-right {
-    position: relative;
-}
-
-/* Home banner */
-.home-banner {
-    background-color: #9e3576; 
-    color: #fff;
-    padding: 70px;
-    text-align: center;
-    margin-top: -300px;
-    padding-top: 300px;
-}
-
-.home-banner h2 {
-    margin: 0;
-}
-
-.home-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.home-info {
-    flex: 1 1 50%;
-    padding: 20px;
-}
-
-.home-image {
-    flex: 1 1 50%;
-    padding: 20px;
-    text-align: center;
-}
-
-.home-image img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
 
 /* Home banner with lots of info */
 .banner {
