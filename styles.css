@@ -729,3 +729,53 @@ footer {
     font-size: 16px;
     line-height: 1.6;
 }
+
+/* Tabled Interfaces Styles */
+  .tabs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tab-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+  }
+
+  .tab-links li {
+    margin-right: 10px;
+  }
+
+  .tab-links a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    background: #eee;
+    color: #333;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .tab-links a:hover {
+    background: #ddd;
+  }
+
+  .tab-links .active a {
+    background: #ddd;
+    color: #000;
+  }
+
+  .tab-content {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background: #fff;
+  }
+
+  .tab {
+    display: none;
+  }
+
+  .tab.active {
+    display: block;
+  }
