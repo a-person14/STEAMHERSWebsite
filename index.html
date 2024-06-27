@@ -518,6 +518,22 @@
             icon.style.transform = icon.style.transform === "rotate(180deg)" ? "rotate(0deg)" : "rotate(180deg)";
         }
 
+          document.addEventListener('DOMContentLoaded', function() {
+    const tabLinks = document.querySelectorAll('.tab-links li a');
+    const tabs = document.querySelectorAll('.tab');
+
+    tabLinks.forEach((link, index) => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        tabLinks.forEach(link => link.parentElement.classList.remove('active'));
+        tabs.forEach(tab => tab.classList.remove('active'));
+
+        link.parentElement.classList.add('active');
+        tabs[index].classList.add('active');
+      });
+    });
+  });
     </script>
 </body>
 </html>
