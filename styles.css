@@ -366,6 +366,11 @@ nav ul.nav-links li.dropdown .dropdown-content li a:hover {
     border-radius: 50px;
     background-color: #ffe6f2; /* Light pink background */
     color: #ff69b4; /* Pink text color */
+    display: block;
+}
+
+.contact-inputs:last-of-type {
+    margin-bottom: 20px; /* Add more space before the submit button if needed */
 }
 
 .contact-us textarea {
