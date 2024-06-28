@@ -347,6 +347,9 @@ nav ul.nav-links li.dropdown .dropdown-content li a:hover {
 
 
 /* Get Involved Page */
+  .section {
+    text-align: center;
+  }
 .contact-us {
     padding: 20px;
     background-color: #f9f9f9;
