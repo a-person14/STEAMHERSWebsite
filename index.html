@@ -14,13 +14,13 @@
             </a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#" onclick="openTab('about-us')">About Us</a></li>
+                    <li><a href="#" onclick="openTab('home')">Home</a></li>
                     <li class="dropdown">
                         <a href="#" onclick="openTab('programs')">Our Programs</a>
                         <ul class="dropdown-content">
-                            <li><a href="#" onclick="scrollToSection('steam-courses')">STEAM Courses</a></li>
-                            <li><a href="#" onclick="scrollToSection('steam-contests')">STEAM Contests</a></li>
-                            <li><a href="#" onclick="scrollToSection('summer-programs')">Summer Programs</a></li>
+                            <li><a href="#" onclick="scrollToSection('steam-courses', 'programs')">STEAM Courses</a></li>
+                            <li><a href="#" onclick="scrollToSection('steam-contests', 'programs')">STEAM Contests</a></li>
+                            <li><a href="#" onclick="scrollToSection('summer-programs', 'programs')">Summer Programs</a></li>
                         </ul>
                     </li>
                     <li><a href="#" onclick="openTab('team')">Our Team</a></li>
@@ -39,7 +39,7 @@
     <div class="home-banner">
         <h1>Welcome to STEAMHers</h1>
         <p>Empowering Women in Science, Technology, Engineering, Arts, and Mathematics</p>
-        <a href="#" onclick="openTab('about-us')" class="btn">Learn More</a>
+        <a href="#" onclick="scrollToSection('about-us', 'home')" class="btn">Learn More</a>
     </div>
     <div class="container">
         <div class="home-content">
@@ -49,52 +49,7 @@
         </div>
     </div>
 
-    <section class="banner">
-        <div class="banner-container">
-            <div class="banner-item" style="background-image: url('image.png');">
-                <div class="banner-text">
-                    <h1>STEAMHers</h1>
-                </div>
-            </div>
-            <div class="banner-item">
-                <h2>Contest</h2>
-                <button>Learn More</button>
-            </div>
-            <div class="banner-item">
-                <img src="gmail-icon.png" alt="Students">
-            </div>
-            <div class="banner-item">
-                <h2>Math Competition</h2>
-                <p>Solve problems and make friends. </p>
-                <p> math competitions build community and will </p>
-                <p> you fall in love with competitive math.</p>
-                <button>Learn More</button>
-            </div>
-        </div>
-        <div class="stats-container">
-            <div class="stat-item">
-                <h2>Multiple</h2>
-                <p>Contests year round</p>
-            </div>
-            <div class="stat-item">
-                <h2>40+</h2>
-                <p>Members</p>
-            </div>
-            <div class="stat-item">
-                <h2>20+</h2>
-                <p>Officers and Teachers</p>
-            </div>
-            <div class="stat-item">
-                <h2>10+</h2>
-                <p>Countries</p>
-            </div>
-        </div>
-    </section>           
-    
-</section>
-
-<section id="about-us" class="section">
-    <div class="centered-content">
+    <div id="about-us" class="centered-content">
         <div class="about-us-banner">
             <h2>About Us</h2>
         </div>
@@ -106,11 +61,15 @@
                 <div class="mission-banner banner-left">
                     <h3>Our Mission</h3>
                     <p>Our mission is to provide educational resources, mentorship, and networking opportunities to women and girls of all ages. We believe that by fostering a collaborative environment, we can inspire the next generation of female leaders in STEAM.</p>
+                    <p>We aim to break down barriers and create a more inclusive STEAM community. Our initiatives are designed to empower women and girls with the skills and confidence they need to succeed in science, technology, engineering, arts, and mathematics.</p>
+                    <p>Through our partnerships with schools, universities, and industry leaders, we strive to provide real-world experiences and connect our members with role models and mentors who can guide them on their journey.</p>
+                    <p class="quote">"Education is the most powerful weapon which you can use to change the world." - Nelson Mandela</p>
                 </div>
                 <div class="programs-banner banner-right">
                     <h3>Our Programs</h3>
                     <p>We offer a variety of programs including online courses, workshops, competitions, and summer programs. These initiatives are designed to build confidence, enhance skills, and promote gender equality in STEAM fields.</p>
                     <p>Our vision is a world where women are equally represented in all areas of STEAM, contributing their unique perspectives and talents to drive innovation and progress.</p>
+                    <a href="#programs-section" class="btn">Explore Our Programs</a>
                 </div>
             </div>
         </div>
@@ -136,6 +95,50 @@
             <img src="path/to/science-photo.jpg" alt="Science Photo">
         </div>
     </div>
+
+    <section class="banner">
+        <div class="banner-container">
+            <div class="banner-item" style="background-image: url('image.png');">
+                <div class="banner-text">
+                    <h1>STEAMHers</h1>
+                </div>
+            </div>
+            <div class="banner-item">
+                <h2>Contest</h2>
+                <p>Participate in our latest contest and showcase your skills!</p>
+                <button>Learn More</button>
+            </div>
+            <div class="banner-item">
+                <img src="gmail-icon.png" alt="Students">
+            </div>
+            <div class="banner-item">
+                <h2>Math Competition</h2>
+                <p>Solve problems and make friends. </p>
+                <p> math competitions build community and will </p>
+                <p> you fall in love with competitive math.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+        <div class="stats-container">
+            <div class="stat-item">
+                <h2>Multiple</h2>
+                <p>Contests held year-round</p>
+            </div>
+            <div class="stat-item">
+                <h2>40+</h2>
+                <p>Active Members</p>
+            </div>
+            <div class="stat-item">
+                <h2>20+</h2>
+                <p>Officers and Teachers dedicated to your success</p>
+            </div>
+            <div class="stat-item">
+                <h2>10+</h2>
+                <p>Countries represented in our community</p>
+            </div>
+        </div>
+    </section>           
+    
 </section>
     
 <section id="programs" class="section">
@@ -450,7 +453,7 @@
     </div>
     <!-- End of Sponsors Section -->
     
-    <div class="footer-content">
+    <div class="copyright">
       <p>&copy; 2024 STEAMHers. All rights reserved.</p>
     </div>
   </div>
@@ -481,8 +484,10 @@
             document.getElementById(tabName).style.display = "block";
         }
 
-        function scrollToSection(sectionId) {
-            openTab("programs");
+        function scrollToSection(sectionId, tabName) {
+            if (tabName == 'programs'){
+                openTab(tabName);
+            }
             var element = document.getElementById(sectionId);
             if (element) {
                 element.scrollIntoView({ behavior: 'smooth' });

@@ -171,6 +171,12 @@ nav ul.nav-links li.dropdown .dropdown-content li a:hover {
     margin: 0 auto;
 }
 
+.quote {
+        margin-top: 20px;
+        font-style: italic;
+        text-align: center;
+        color: dark pink;
+    }
 
 /*Social Icons*/
 .social-icons {
@@ -366,6 +372,11 @@ nav ul.nav-links li.dropdown .dropdown-content li a:hover {
     border-radius: 50px;
     background-color: #ffe6f2; /* Light pink background */
     color: #ff69b4; /* Pink text color */
+    display: block;
+}
+
+.contact-inputs{
+    margin-bottom: 20px; /* Add more space before the submit button if needed */
 }
 
 .contact-us textarea {
@@ -452,7 +463,33 @@ footer {
     z-index: 1;
 }
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    flex-wrap: wrap;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eaeaea;
+}
+.footer-content {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eaeaea;
+}
+
+.sponsors {
+    flex: 1 1 100%; /* Take full width on small screens */
+    background-color: #c53179; /* Dark pink background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
 .newsletter-signup {
+    flex: 1;
     margin-top: 20px;
     text-align: center; /* Center align newsletter form */
 }
@@ -476,11 +513,26 @@ footer {
 .newsletter-signup button {
     padding: 8px 20px;
     font-size: 14px;
-    background-color: #DAA6C8;
+    background-color: #c53179;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+    .footer-container {
+        flex-wrap: nowrap;
+    }
+
+    .sponsors {
+        flex: 1 1 30%; /* Adjust size for larger screens */
+        margin-right: 20px;
+    }
+
+    .newsletter-signup {
+        flex: 1 1 70%; /* Adjust size for larger screens */
+    }
 }
 
 /*Our Programs section*/
@@ -772,3 +824,13 @@ footer {
   .tab.active {
     display: block;
   }
+
+/* Style for the copyright notice */
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+}
