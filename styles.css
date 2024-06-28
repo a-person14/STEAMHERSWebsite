@@ -376,7 +376,7 @@ nav ul.nav-links li.dropdown .dropdown-content li a:hover {
 }
 
 .contact-inputs:last-of-type {
-    margin-bottom: 20px; /* Add more space before the submit button if needed */
+    margin-bottom: 30px; /* Add more space before the submit button if needed */
 }
 
 .contact-us textarea {
