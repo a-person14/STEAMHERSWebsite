@@ -452,6 +452,24 @@ footer {
     z-index: 1;
 }
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eaeaea;
+    flex-wrap: wrap;
+}
+.sponsors {
+    flex: 1 1 100%; /* Take full width on small screens */
+    background-color: #ffe6f2; /* Light pink background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
 .newsletter-signup {
     margin-top: 20px;
     text-align: center; /* Center align newsletter form */
@@ -481,6 +499,21 @@ footer {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+    .footer-container {
+        flex-wrap: nowrap;
+    }
+
+    .sponsors {
+        flex: 1 1 30%; /* Adjust size for larger screens */
+        margin-right: 20px;
+    }
+
+    .newsletter-signup {
+        flex: 1 1 70%; /* Adjust size for larger screens */
+    }
 }
 
 /*Our Programs section*/
