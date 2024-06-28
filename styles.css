@@ -824,3 +824,13 @@ footer {
   .tab.active {
     display: block;
   }
+
+/* Style for the copyright notice */
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+}
