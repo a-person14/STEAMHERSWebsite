@@ -375,8 +375,8 @@ nav ul.nav-links li.dropdown .dropdown-content li a:hover {
     display: block;
 }
 
-.contact-inputs:last-of-type {
-    margin-bottom: 30px; /* Add more space before the submit button if needed */
+.contact-inputs{
+    margin-bottom: 20px; /* Add more space before the submit button if needed */
 }
 
 .contact-us textarea {
@@ -469,6 +469,14 @@ footer {
     align-items: flex-start;
     padding: 20px;
     flex-wrap: wrap;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eaeaea;
+}
+.footer-content {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eaeaea;
 }
 
 .sponsors {
@@ -481,6 +489,7 @@ footer {
 }
 
 .newsletter-signup {
+    flex: 1;
     margin-top: 20px;
     text-align: center; /* Center align newsletter form */
 }
