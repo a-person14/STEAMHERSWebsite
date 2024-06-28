@@ -380,63 +380,72 @@
     <h2>Get Involved</h2>
     <p>Join us in our mission to empower women in STEAM. There are many ways you can get involved, from volunteering to participating in our programs.</p>
 
-    <!-- Motivational Box with Tabs -->
-    <div class="motivational-box">
-      <div class="tabs">
-        <ul class="tab-links">
-          <li class="active"><a href="#tab1">Empower Women through Volunteering</a></li>
-          <li><a href="#tab2">Be Recognized for Your Impact</a></li>
-        </ul>
+    <!-- Banners Section -->
+    <div class="banners">
+      <!-- Banner 1 -->
+      <div class="banner">
+        <h3>Empower Women through Volunteering</h3>
+        <p>Volunteer to empower women in STEAM fields and contribute to gender equality in tech and innovation.</p>
+      </div>
 
-        <div class="tab-content">
-          <div id="tab1" class="tab active">
-            <h3>Empower Women through Volunteering</h3>
-            <p>Volunteer to empower women in STEAM fields and contribute to gender equality in tech and innovation.</p>
-          </div>
-
-          <div id="tab2" class="tab">
-            <h3>Be Recognized for Your Impact</h3>
-            <p>Your volunteer efforts will be celebrated and recognized for making a meaningful difference in women's lives.</p>
-          </div>
-        </div>
+      <!-- Banner 2 -->
+      <div class="banner">
+        <h3>Be Recognized for Your Impact</h3>
+        <p>Your volunteer efforts will be celebrated and recognized for making a meaningful difference in women's lives.</p>
       </div>
     </div>
-    <!-- End of Motivational Box -->
-    
-    <!--contact us-->
-    <!--contact us-->
+    <!-- End of Banners Section -->
+
+    <!-- Contact Us Section -->
+    <section class="contact-us-section">
+        <div class="contact-us">
+            <!-- Contact Us Heading -->
+            <h2 class="main-heading">Contact Us</h2>
+
+            <!-- Banner Section -->
+            <div class="contact-banner">
+                <h1>We'd Love to Hear From You!</h1>
+                <p>Contact us with any questions, comments, or concerns.</p>
+            </div>
+
+            <!-- Contact Form Section -->
+            <form action="" class="contact">
+                <input type="text" id="name" placeholder="Your Name" class="contact-inputs" required>
+                <input type="text" id="email" placeholder="Your Email" class="contact-inputs" required>
+                <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+
+            <!-- Additional Contact Information -->
+            <div class="contact-info">
+                <h3>Our Contact Information</h3>
+                <p>Email: steamhersofficial@gmail.com</p>
+            </div>
+        </div>
+    </section>
+    <!-- End of Contact Us Section -->
   </div>
 </section>
 
-<!-- Contact Us Section -->
-<section class="contact-us-section">
-    <div class="contact-us">
-        <!-- Contact Us Heading -->
-        <h2 class="main-heading">Contact Us</h2>
-
-        <!-- Banner Section -->
-        <div class="contact-banner">
-            <h1>We'd Love to Hear From You!</h1>
-            <p>Contact us with any questions, comments, or concerns.</p>
-        </div>
-
-        <!-- Contact Form Section -->
-        <form action="" class="contact">
-            <input type="text" id="name" placeholder="Your Name" class="contact-inputs" required>
-            <input type="text" id="email" placeholder="Your Email" class="contact-inputs" required>
-            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-
-        <!-- Additional Contact Information -->
-        <div class="contact-info">
-            <h3>Our Contact Information</h3>
-            <p>Email: steamhersofficial@gmail.com</p>
-        </div>
+<footer>
+  <div class="container footer-container">
+    <!-- Newsletter Signup Section -->
+    <div class="newsletter-signup">
+      <h3>Subscribe to Our Newsletter</h3>
+      <form action="#" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
     </div>
-</section>
-<!-- End of Contact Us Section -->
-
+    <!-- End of Newsletter Signup Section -->
+    
+    <!-- Sponsors Section -->
+    <div class="sponsors">
+      <h3>Our Sponsors</h3>
+      <p>We thank our sponsors for their generous support.</p>
+      <!-- Add sponsor logos or names here -->
+    </div>
+    <!-- End of Sponsors Section -->
 <footer>
   <div class="container footer-container">
     <!-- Newsletter Signup Section -->
@@ -462,6 +471,7 @@
     </div>
   </div>
 </footer>
+    
     <script>
         var lastScrollTop = 0;
         window.addEventListener('scroll', function() {
