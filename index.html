@@ -14,13 +14,13 @@
             </a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#" onclick="openTab('about-us')">About Us</a></li>
+                    <li><a href="#" onclick="openTab('home')">Home</a></li>
                     <li class="dropdown">
                         <a href="#" onclick="openTab('programs')">Our Programs</a>
                         <ul class="dropdown-content">
-                            <li><a href="#" onclick="scrollToSection('steam-courses')">STEAM Courses</a></li>
-                            <li><a href="#" onclick="scrollToSection('steam-contests')">STEAM Contests</a></li>
-                            <li><a href="#" onclick="scrollToSection('summer-programs')">Summer Programs</a></li>
+                            <li><a href="#" onclick="scrollToSection('steam-courses', 'programs')">STEAM Courses</a></li>
+                            <li><a href="#" onclick="scrollToSection('steam-contests', 'programs')">STEAM Contests</a></li>
+                            <li><a href="#" onclick="scrollToSection('summer-programs', 'programs')">Summer Programs</a></li>
                         </ul>
                     </li>
                     <li><a href="#" onclick="openTab('team')">Our Team</a></li>
@@ -39,13 +39,56 @@
     <div class="home-banner">
         <h1>Welcome to STEAMHers</h1>
         <p>Empowering Women in Science, Technology, Engineering, Arts, and Mathematics</p>
-        <a href="#" onclick="openTab('about-us')" class="btn">Learn More</a>
+        <a href="#" onclick="scrollToSection('about-us', 'home')" class="btn">Learn More</a>
     </div>
     <div class="container">
         <div class="home-content">
             <div class="home-image">
                 <img src="https://scienceeurope.org/media/yaemm3wa/illustration-woman-scientist.png?mode=crop&amp;width=1200&amp;height=628" alt="Empowering Women in Science - Science Europe">
             </div>
+        </div>
+    </div>
+
+    <div id="about-us" class="centered-content">
+        <div class="about-us-banner">
+            <h2>About Us</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="about-content">
+            <div class="about-text">
+                <p>STEAMHers is a nonprofit organization dedicated to empowering women in Science, Technology, Engineering, Arts, and Mathematics (STEAM). Founded by Shreya Baronia and Maider Escobar, STEAMHers aims to create a supportive community for women to thrive in traditionally male-dominated fields.</p>
+                <div class="mission-banner banner-left">
+                    <h3>Our Mission</h3>
+                    <p>Our mission is to provide educational resources, mentorship, and networking opportunities to women and girls of all ages. We believe that by fostering a collaborative environment, we can inspire the next generation of female leaders in STEAM.</p>
+                </div>
+                <div class="programs-banner banner-right">
+                    <h3>Our Programs</h3>
+                    <p>We offer a variety of programs including online courses, workshops, competitions, and summer programs. These initiatives are designed to build confidence, enhance skills, and promote gender equality in STEAM fields.</p>
+                    <p>Our vision is a world where women are equally represented in all areas of STEAM, contributing their unique perspectives and talents to drive innovation and progress.</p>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <h3 class="pink-box">Why We Started</h3>
+            <div class="about-content">
+                <div class="about-box">
+                    <p>The founders of STEAMHers, Shreya Baronia and Maider Escobar, both experienced challenges and discrimination in STEAM fields due to their gender.</p>
+                    <p>Shreya often felt alienated in male-dominated environments, while Maider recognized the necessity of creating opportunities for women in areas where there were few opportunities for them to drive meaningful change.</p>
+                    <p>Together, they launched STEAMHers to combat these issues and to create a platform where women can thrive and support each other.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Pink accordion and science photo -->
+        <div class="pink-accordion">
+            <h3>Our Vision</h3>
+            <p>We envision a world where women are equally represented in all areas of STEAM.</p>
+            <p>Through our advocacy and initiatives, we aim to break down barriers that hinder women's progress in STEAM, whether they be cultural, systemic, or institutional. We envision a future where young girls grow up knowing that they have a place in STEAM careers and where established professionals find support and opportunities to advance their careers and leadership roles.</p>
+            <p>Ultimately, our vision extends beyond equality to equity, where resources, opportunities, and recognition are distributed fairly among all genders, ensuring that no woman is left behind in the march towards scientific and technological advancement.</p>
+        </div>
+        <div class="science-photo">
+            <img src="path/to/science-photo.jpg" alt="Science Photo">
         </div>
     </div>
 
@@ -91,51 +134,6 @@
         </div>
     </section>           
     
-</section>
-
-<section id="about-us" class="section">
-    <div class="centered-content">
-        <div class="about-us-banner">
-            <h2>About Us</h2>
-        </div>
-    </div>
-    <div class="container">
-        <div class="about-content">
-            <div class="about-text">
-                <p>STEAMHers is a nonprofit organization dedicated to empowering women in Science, Technology, Engineering, Arts, and Mathematics (STEAM). Founded by Shreya Baronia and Maider Escobar, STEAMHers aims to create a supportive community for women to thrive in traditionally male-dominated fields.</p>
-                <div class="mission-banner banner-left">
-                    <h3>Our Mission</h3>
-                    <p>Our mission is to provide educational resources, mentorship, and networking opportunities to women and girls of all ages. We believe that by fostering a collaborative environment, we can inspire the next generation of female leaders in STEAM.</p>
-                </div>
-                <div class="programs-banner banner-right">
-                    <h3>Our Programs</h3>
-                    <p>We offer a variety of programs including online courses, workshops, competitions, and summer programs. These initiatives are designed to build confidence, enhance skills, and promote gender equality in STEAM fields.</p>
-                    <p>Our vision is a world where women are equally represented in all areas of STEAM, contributing their unique perspectives and talents to drive innovation and progress.</p>
-                </div>
-            </div>
-        </div>
-        <div class="banner">
-            <h3 class="pink-box">Why We Started</h3>
-            <div class="about-content">
-                <div class="about-box">
-                    <p>The founders of STEAMHers, Shreya Baronia and Maider Escobar, both experienced challenges and discrimination in STEAM fields due to their gender.</p>
-                    <p>Shreya often felt alienated in male-dominated environments, while Maider recognized the necessity of creating opportunities for women in areas where there were few opportunities for them to drive meaningful change.</p>
-                    <p>Together, they launched STEAMHers to combat these issues and to create a platform where women can thrive and support each other.</p>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Pink accordion and science photo -->
-        <div class="pink-accordion">
-            <h3>Our Vision</h3>
-            <p>We envision a world where women are equally represented in all areas of STEAM.</p>
-            <p>Through our advocacy and initiatives, we aim to break down barriers that hinder women's progress in STEAM, whether they be cultural, systemic, or institutional. We envision a future where young girls grow up knowing that they have a place in STEAM careers and where established professionals find support and opportunities to advance their careers and leadership roles.</p>
-            <p>Ultimately, our vision extends beyond equality to equity, where resources, opportunities, and recognition are distributed fairly among all genders, ensuring that no woman is left behind in the march towards scientific and technological advancement.</p>
-        </div>
-        <div class="science-photo">
-            <img src="path/to/science-photo.jpg" alt="Science Photo">
-        </div>
-    </div>
 </section>
     
 <section id="programs" class="section">
@@ -478,8 +476,10 @@
             document.getElementById(tabName).style.display = "block";
         }
 
-        function scrollToSection(sectionId) {
-            openTab("programs");
+        function scrollToSection(sectionId, tabName) {
+            if (tabName == 'programs'){
+                openTab(tabName);
+            }
             var element = document.getElementById(sectionId);
             if (element) {
                 element.scrollIntoView({ behavior: 'smooth' });
