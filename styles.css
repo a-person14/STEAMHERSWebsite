@@ -171,6 +171,12 @@ nav ul.nav-links li.dropdown .dropdown-content li a:hover {
     margin: 0 auto;
 }
 
+.quote {
+        margin-top: 20px;
+        font-style: italic;
+        text-align: center;
+        color: dark pink;
+    }
 
 /*Social Icons*/
 .social-icons {
