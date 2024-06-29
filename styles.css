@@ -345,6 +345,11 @@ nav ul.nav-links li.dropdown .dropdown-content li a:hover {
   display: inline-block;
 }
 
+.separator {
+    border-top: 1px solid #ddd;
+    margin: 2rem 0;
+}
+
 
 /* Get Involved Page */
 
