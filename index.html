@@ -6,7 +6,14 @@
     <title>STEAMHers: Celebrating Women in STEM</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <div class="top-banner" id="top-banner">
+        <p>Sign Up for our FREE classes and contests today! 
+            <a href="https://forms.gle/YOUR_GOOGLE_FORM_URL" target="_blank" class="signup-btn">Sign Up</a>
+            <span class="close-btn" onclick="closeBanner()">×</span>
+        </p>
+    </div>
     <header>
         <div class="container header-container">
             <a href="#" onclick="openTab('home')" class="logo-link">
@@ -331,7 +338,7 @@
             <p><strong>Duration:</strong> Typically held over three weeks, each class session spans 2-3 hours, allowing for in-depth exploration of STEAM topics.</p>
             <p>Please note that while most of our courses are offered during the summer, some classes may not be available due to teacher availability.</p>
             <p>We strive to offer a robust selection of courses that cater to diverse interests and skill levels, ensuring an enriching educational experience for all participants!</p>
-            
+
             <div class="accordion">
                 <div class="accordion-item">
                     <div class="accordion-header" onclick="toggleAccordion(this)">
@@ -428,6 +435,7 @@
             </div>
         </div>
     </div>
+
 </section>
 
 
@@ -481,7 +489,6 @@
     <h2>Get Involved</h2>
    <p>Volunteer to empower women in STEAM fields and contribute to gender equality in tech and innovation. Whether you're a student, professional, or simply passionate about our cause, your time and expertise can make a significant impact. Join us in mentoring aspiring female technologists, facilitating workshops, or organizing events that inspire and educate.</p>
 </div>
-
     <!-- Banners Section -->
     <div class="banners">
       <!-- Banner 1 -->
@@ -583,6 +590,11 @@
             }
             lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
         });
+
+        function closeBanner() {
+            document.getElementById('top-banner').style.display = 'none';
+            document.body.style.paddingTop = '0';
+        }
 
         function openTab(tabName) {
             var i, sections;

@@ -111,6 +111,59 @@ nav ul.nav-links li.dropdown .dropdown-content li a:hover {
     text-decoration: underline;
 }
 
+/*Top Banner*/
+.top-banner {
+    background-color: #a155a5;
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.signup-btn {
+    background-color: #f8c12f;
+    color: #004c8b;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #c6a321;
+}
+
+.close-btn {
+    background-color: #a155a5;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #c6a321;
+}
+
+/* Add padding to the body to prevent content from being hidden behind the banner */
+body {
+    padding-top: 50px; /* Adjust based on the height of your banner */
+}
+
+
 /* Home page*/
 .home-banner {
     background-color: #9e3576; 
