@@ -479,6 +479,30 @@ body {
 
 
 /* Get Involved Page */
+/* Optionally center the banners content if needed */
+.banner {
+    text-align: center;
+}
+
+/* General styles */
+.section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.banners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffe6f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
 .contact-us {
     padding: 20px;
