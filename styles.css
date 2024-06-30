@@ -479,15 +479,16 @@ body {
 
 
 /* Get Involved Page */
-/* Optionally center the banners content if needed */
-.banner {
-    text-align: center;
-}
 
-/* General styles */
-.section {
+.Banner {
+    text-align: center;
     padding: 20px;
     background-color: #f9f9f9;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #d3a9e4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .banners {
@@ -496,13 +497,6 @@ body {
     align-items: center;
 }
 
-.banner {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #b67ecc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
 
 .contact-us {
     padding: 20px;
