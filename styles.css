@@ -572,6 +572,13 @@ footer {
     text-align: center;
 }
 
+.program-section h4 {
+    font-size: 1.2em;
+    color: #590061;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
 /* Accordion Styles */
 .accordion {
     width: 100%;
@@ -637,6 +644,15 @@ footer {
     color: #333;
 }
 
+.accordion-content h6 {
+    margin: 0 0 1em 0; /* Same as p element's margin */
+    font-size: 1rem; /* Same as p element's font size */
+    line-height: 1.5; /* Same as p element's line height */
+    color: inherit; /* Same as p element's color */
+    padding-bottom: 40px; /* Additional padding */
+    font-weight: normal;
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -648,7 +664,7 @@ footer {
 
 button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #a600ff;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -657,7 +673,7 @@ button {
   }
   
 button:hover {
-    background-color: #0056b3;
+    background-color: #5e0091;
 }
   
 p {

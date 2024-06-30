@@ -347,9 +347,6 @@
                                     <li>Properties of shapes, theorems, and proofs.</li>
                                     <li>Coordinate geometry and transformations.</li>
                                     <li>Geometric constructions and loci.</li>
-                                    <p id="class-time">5pm EST</p>
-                                    <button onclick="convertTime('7/09/2024 3:00:00 AM UTC', '7/09/2024 3:00:00 AM UTC')">Convert to Local Time</button>
-                                    <p id="converted-time"></p>
                                 </ul>
                             </li>
                             <li><strong>Algebra 2:</strong> Advanced algebraic concepts and techniques.
@@ -369,6 +366,14 @@
                                     <li>Applications in real-world contexts, such as physics and engineering.</li>
                                 </ul>
                             </li>
+                            <p> </p>
+                            <h1><strong>Time slots</strong></h1>
+                            <h4>Slot 1</h4>
+                            <p id="converted-time-1">July 8 - July 19 from Monday-Friday, 11pm-2am EST</p>
+                            <button data-target="converted-time-1" onclick="convertTime('7/09/2024 3:00:00 AM UTC', '7/20/2024 6:00:00 AM UTC', 'Monday-Friday')">Convert to Local Time</button>
+                            <h4>Slot 2</h4>
+                            <p id="converted-time-2"> July 20 - July 31 from Saturday-Wednesday, 9am-12pm EST</p>
+                            <button data-target="converted-time-2" onclick="convertTime('7/21/2024 1:00:00 PM UTC', '8/1/2024 4:00:00 PM UTC', 'Saturday-Wednesday')">Convert to Local Time</button>
                         </ul>
                     </div>
                 </div>
@@ -627,65 +632,17 @@
         });
 
 
-        function convertTime(start, end) {
-            var date = new Date(start);
-            var convertedTime = date.toLocaleString();
-            document.getElementById("converted-time").innerText = convertedTime;      
+        function convertTime(start, end, days) {
+            var startdate = new Date(start);
+            var enddate = new Date(end);
+            var convertedDate = startdate.toLocaleDateString();
+            var endConvertedDate = enddate.toLocaleDateString();
+            var convertedTime = startdate.toLocaleTimeString();
+            var endConvertedTime = enddate.toLocaleTimeString();
+            var targetId = event.target.getAttribute('data-target');
+
+            document.getElementById(targetId).innerText = convertedDate + " to " + endConvertedDate + " from " + days + ", " + convertedTime + "-" + endConvertedTime;      
         }
-
-
-/*
-  // Get the element containing the time in EST
-  const timeElement = document.getElementById('class-time');
-  const estTimeStr = timeElement.textContent.trim(); // e.g., "5pm EST"
-
-  // Extract hours and meridian (am/pm) from the EST time string
-  let [, hoursStr, meridian] = estTimeStr.match(/(\d{1,2})(am|pm)/i);
-  let hours = parseInt(hoursStr);
-
-  // Convert EST time to 24-hour format
-  if (meridian.toLowerCase() === 'pm' && hours < 12) {
-    hours += 12;
-  }
-
-  // Get current user's local time
-  const currentDate = new Date();
-  const estOffset = -5; // Offset for EST (Eastern Standard Time) is -5 hours
-  const userOffset = currentDate.getTimezoneOffset() / 60; // Offset for user's timezone in hours
-
-  // Calculate time difference in hours
-  const timeDifference = userOffset + estOffset;
-
-  // Calculate adjusted hours
-  let adjustedHours = hours + timeDifference;
-
-  if (0<=adjustedHours<24){
-    if (adjustedHours <= 12) {
-        ampm = "AM"
-    }
-    else{
-        ampm="PM"
-    }
-  }
-  else if (adjustedHours < 0) {
-    adjustedHours += 24;
-    ampm = "PM"
-  } else if (adjustedHours >= 24) {
-    adjustedHours -= 24;
-    ampm = "AM"
-  }
-
-  // Convert adjusted time to 12-hour format
-  let displayHours = adjustedHours % 12;
-  if (displayHours === 0) {
-    displayHours = 12; // Display 12 instead of 0 for 12 AM
-  }
-
-  // Display the converted time
-  const convertedTimeElement = document.getElementById('converted-time');
-  convertedTimeElement.textContent = `Converted time: ${displayHours}:${currentDate.getMinutes().toString().padStart(2, '0')} ${ampm}`;
-
-*/
 
     </script>
 </body>
