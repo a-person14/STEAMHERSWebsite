@@ -21,7 +21,6 @@ body {
 }
 
 .container {
-    max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
     position: relative;
@@ -34,6 +33,8 @@ header {
     position: relative;
     transition: top 0.3s;
     z-index: 1;
+    max-width: 100vw;
+    overflow: hidden;
 }
 
 .header-container {
@@ -610,7 +611,8 @@ footer {
     padding: 20px 0;
     text-align: center;
     position: relative;
-    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
     z-index: 1;
 }
 
@@ -883,4 +885,109 @@ p {
     background-color: #333;
     color: #fff;
     font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul.nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .home-content {
+        flex-direction: column;
+    }
+
+    .home-info,
+    .home-image {
+        flex: 1 1 100%;
+        padding: 10px;
+    }
+
+    .home-banner h1 {
+        font-size: 2em;
+    }
+
+    .home-banner p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .profiles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile {
+        max-width: 100%;
+    }
+
+    .about-us .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text,
+    .about-image {
+        flex: 1 1 100%;
+    }
+
+    .contact-us {
+        padding: 10px;
+    }
+
+    .contact-inputs {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sponsors,
+    .newsletter-signup {
+        flex: 1 1 100%;
+    }
+
+    .accordion {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-banner h1 {
+        font-size: 1.5em;
+    }
+
+    .home-banner p {
+        font-size: 1em;
+    }
+
+    .btn {
+        font-size: 1em;
+    }
 }
