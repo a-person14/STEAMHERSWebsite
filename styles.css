@@ -6,7 +6,7 @@ html, body, h1, h2, p, ul, li {
 
 /* Global styles */
 body {    
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; // white background
     color: #333;
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -26,8 +26,26 @@ body {
     position: relative;
 }
 
+/* Home page*/
+.home-banner {
+    background-color: #9e3576; 
+    color: #fff;
+    padding: 70px;
+    text-align: center;
+    margin-top: -300px;
+    padding-top: 300px;
+}
+.home-banner h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.home-banner h2 {
+    margin: 0;
+}
+
 header {
-    background-color: #DAA6C8; /* Pink background */
+    background-color: #DAA6C8; // Pink Background -- Sub header w/nav.
     color: #fff;
     padding: 10px 0;
     position: relative;
@@ -114,7 +132,7 @@ nav ul.nav-links li.dropdown .dropdown-content li a:hover {
 
 /*Top Banner*/
 .top-banner {
-    background-color: #a155a5;
+    background-color: #a155a5; // Deep purple
     color: #000;
     text-align: center;
     padding: 10px 0;
@@ -128,7 +146,7 @@ nav ul.nav-links li.dropdown .dropdown-content li a:hover {
 }
 
 .signup-btn {
-    background-color: #f8c12f;
+    background-color: #f8c12f; // mustard yellow sign up button
     color: #004c8b;
     border: none;
     padding: 10px 20px;
@@ -164,7 +182,7 @@ body {
     padding-top: 50px; /* Adjust based on the height of your banner */
 }
 
-
+/* COMMENTED OUT FOR TESTING
 /* Home page*/
 .home-banner {
     background-color: #9e3576; 
@@ -182,7 +200,7 @@ body {
 .home-banner h2 {
     margin: 0;
 }
-
+*/
 .home-content {
     display: flex;
     align-items: center;
