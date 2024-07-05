@@ -630,8 +630,8 @@
             openTab('home');
         });
 
-        function toggleAccordion(element) {
-            const header = element;
+
+        function toggleAccordion(header) {
             const content = header.nextElementSibling;
             const icon = header.querySelector('.accordion-icon');
 
@@ -643,7 +643,7 @@
                 content.style.maxHeight = null;
                 content.style.padding = '0';
             } else {
-                content.style.maxHeight = content.scrollHeight + "px";
+                content.style.maxHeight = content.scrollHeight + "1700" + "px";
                 content.style.padding = '15px';
             }
 
