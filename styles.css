@@ -680,9 +680,25 @@ footer {
         flex: 1 1 30%; /* Adjust size for larger screens */
         margin-right: 20px;
     }
+    
+    .sponsor-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+    }
+
+    .sponsor-grid img {
+        max-width: 100%;
+        height: auto;
+     }
 
     .newsletter-signup {
         flex: 1 1 70%; /* Adjust size for larger screens */
+    }
+    .copyright {
+        text-align: center;
+        padding-top: 10px;
+        border-top: 1px solid #ddd;
     }
 }
 
