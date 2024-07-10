@@ -498,6 +498,10 @@ body {
     align-items: center;
 }
 
+#summer-programs {
+            padding: 0;
+}
+
 
 .contact-us {
     padding: 20px;
