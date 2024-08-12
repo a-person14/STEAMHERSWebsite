@@ -607,7 +607,6 @@ body {
     margin: 5px 0;
 }
 
-
 /*Footer Information*/
 footer {
     background-color: #333;
@@ -622,37 +621,32 @@ footer {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center;
     padding: 20px;
-    flex-wrap: wrap;
-}
-.footer-content {
-    text-align: center;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-top: 1px solid #eaeaea;
 }
 
-.sponsors {
-    flex: 1 1 100%; /* Take full width on small screens */
-    background-color: #c53179; /* Dark pink background */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.newsletter-signup,
+.newsletter-link,
+.sponsors,
+.copyright {
+    width: 100%;
+    max-width: 800px; /* Set a max-width for larger screens */
+    margin-bottom: 20px; /* Equal space between each section */
 }
 
 .newsletter-signup {
-    flex: 1;
-    margin-top: 20px;
-    text-align: center; /* Center align newsletter form */
+    text-align: left;
+}
+
+.newsletter-signup h3 {
+    margin-bottom: 10px;
 }
 
 .newsletter-signup form {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Align items to the start (left) */
     margin-top: 10px;
 }
 
@@ -668,347 +662,74 @@ footer {
 .newsletter-signup button {
     padding: 8px 20px;
     font-size: 14px;
-    background-color: #c53179;
+    background-color: #c53179; /* Background color of the button */
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
+
+.newsletter-link {
+    padding: 15px;
+    background-color: #c53179;
+    border: 1px solid #c53179;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.newsletter-link h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #f3f3f3; 
+}
+
+.newsletter-link p {
+    font-size: 16px;
+    color: #e0b520; 
+    margin-bottom: 15px;
+}
+
+.newsletter-link a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #100e6c;
+    background-color: #e0b520; /* Button background color */
+    border: none;
+    border-radius: 4px;
+    text-decoration: none; /* Remove underline from link */
+    cursor: pointer;
+}
+
+.newsletter-link a:hover {
+    background-color: #b68f01; /* Darker shade for hover effect */
+}
+
+.sponsors {
+    background-color: #c53179;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.copyright {
+    font-size: 14px;
+}
+
 /* Media Query for Larger Screens */
 @media (min-width: 768px) {
     .footer-container {
-        flex-wrap: nowrap;
+        flex-direction: row; /* Arrange items in a row for larger screens */
+        justify-content: space-between;
     }
 
-    .sponsors {
-        flex: 1 1 30%; /* Adjust size for larger screens */
-        margin-right: 20px;
-    }
-    
-    .sponsor-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 20px;
-    }
-
-    .sponsor-grid img {
-        max-width: 100%;
-        height: auto;
-     }
-
-    .newsletter-signup {
-        flex: 1 1 70%; /* Adjust size for larger screens */
-    }
-    .copyright {
-        text-align: center;
-        padding-top: 10px;
-        border-top: 1px solid #ddd;
-    }
-}
-
-/*Our Programs section*/
-.program-section {
-    margin-bottom: 30px;
-}
-
-.program-section > h2 {
-    font-size: 2.5em;
-    color: #790084;
-    margin-bottom: 20px;
-    position: relative;
-    width: auto;
-    text-align: center;
-}
-
-.program-section h2::after {
-    content: "";
-    display: block;
-    width: 26%; /* Adjust the width of the underline */
-    height: 2px; /* Adjust the thickness of the underline */
-    background-color: #cea9e4;
-    position: absolute;
-    bottom: -5px; /* Adjust this value to add space between text and underline */
-    left: 50%; /* Center align horizontally */
-    transform: translateX(-51%); /* Center align horizontally */
-}
-
-.program-section h3 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.program-section h4 {
-    font-size: 1.2em;
-    color: #590061;
-    margin-top: 1px;
-    margin-bottom: 1px;
-}
-
-/* Accordion Styles */
-.accordion {
-    width: 100%;
-    max-width: 800px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
-}
-
-.accordion-item {
-    border-bottom: 1px solid #ddd;
-}
-
-.accordion-item:last-child {
-    border-bottom: none;
-}
-
-.accordion-header {
-    background: #CF5387;
-    color: #fff;
-    padding: 15px;
-    font-size: 1.2em;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: background 0.3s;
-}
-
-.accordion-header:hover {
-    background: #a64c72;
-}
-
-.accordion-icon {
-    font-size: 1.5em;
-    transition: transform 0.3s;
-}
-
-.accordion-header.active .accordion-icon {
-    transform: rotate(180deg);
-}
-
-.accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-}
-
-.accordion-content ul {
-    padding-left: 15px; /* Adjust the padding for the bullets */
-    margin: 10px 0; /* Optional: Adjust the top and bottom margin */
-}
-
-.accordion-header.active + .accordion-content {
-    max-height: 500px; /* Adjust based on your content's maximum height */
-    padding: 25px;
-}
-
-.accordion-content p {
-    margin: 0;
-    font-size: 1em;
-    color: #333;
-}
-
-.accordion-content h6 {
-    margin: 0 0 1em 0; /* Same as p element's margin */
-    font-size: 1rem; /* Same as p element's font size */
-    line-height: 1.5; /* Same as p element's line height */
-    color: inherit; /* Same as p element's color */
-    padding-bottom: 40px; /* Additional padding */
-    font-weight: normal;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@media (max-width: 768px) {
-    .container {
-        padding: 0 10px;
-    }
-
-    .header-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul.nav-links li {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    .home-content {
-        flex-direction: column;
-    }
-
-    .home-info,
-    .home-image {
-        flex: 1 1 100%;
-        padding: 10px;
-    }
-
-    .home-banner h1 {
-        font-size: 2em;
-    }
-
-    .home-banner p {
-        font-size: 1.2em;
-        margin-bottom: 20px;
-    }
-
-    .button-container {
-        flex-direction: column;
-    }
-
-    .btn {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .profiles {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .profile {
-        max-width: 100%;
-    }
-
-    .about-us .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-text,
-    .about-image {
-        flex: 1 1 100%;
-    }
-
-    .contact-us {
-        padding: 10px;
-    }
-
-    .contact-inputs {
-        width: 100%;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
+    .newsletter-signup,
+    .newsletter-link,
     .sponsors,
-    .newsletter-signup {
-        flex: 1 1 100%;
-    }
-
-    .accordion {
-        width: 100%;
-        max-width: 100%;
-    }
-}
-/*Media Queries for Responsive Design*/
-@media (max-width: 480px) {
-    .home-banner h1 {
-        font-size: 1.5em;
-    }
-
-    .home-banner p {
-        font-size: 1em;
-    }
-
-    .btn {
-        font-size: 1em;
+    .copyright {
+        flex: 1;
+        margin: 0 10px; /* Adjust spacing on larger screens */
     }
 }
 
-
-.motivational-box {
-    margin-top: 20px;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #a600ff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    margin-top: 10px;
-  }
-  
-button:hover {
-    background-color: #5e0091;
-}
-  
-p {
-    margin: 10px 0;
-}
-
-/* Tabled Interfaces Styles */
-  .tabs {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .tab-links {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0 0 10px 0;
-  }
-
-  .tab-links li {
-    margin-right: 10px;
-  }
-
-  .tab-links a {
-    display: block;
-    padding: 10px 15px;
-    text-decoration: none;
-    background: #eee;
-    color: #333;
-    border-radius: 5px 5px 0 0;
-  }
-
-  .tab-links a:hover {
-    background: #ddd;
-  }
-
-  .tab-links .active a {
-    background: #ddd;
-    color: #000;
-  }
-
-  .tab-content {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-    background: #fff;
-  }
-
-  .tab {
-    display: none;
-  }
-
-  .tab.active {
-    display: block;
-  }
-
-/* Style for the copyright notice */
-.copyright {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px 0;
-    background-color: #333;
-    color: #fff;
-    font-size: 14px;
-}
