@@ -606,6 +606,41 @@ body {
 .contact-info p {
     margin: 5px 0;
 }
+/* "Our Blog" Section */
+#our-blog {
+  background-color: #fce4ec; /* Light pink background */
+  color: #6a1b9a; /* Purple text color */
+}
+
+#our-blog h2 {
+  color: #6a1b9a; /* Purple for the heading */
+}
+
+#our-blog p {
+  color: #4a148c; /* Darker purple for the paragraph text */
+}
+
+/* "Apply Now" Section */
+#apply-now {
+  background-color: #e1bee7; /* Light purple background */
+  color: #4a148c; /* Dark purple text color */
+}
+
+#apply-now h2 {
+  color: #6a1b9a; /* Purple for the heading */
+}
+
+#apply-now p {
+  color: #4a148c; /* Dark purple for the paragraph text */
+}
+
+/* Form Container */
+.form-container iframe {
+  border: none;
+  width: 100%;
+  max-width: 640px;
+  height: 800px; /* Adjust height as needed */
+}
 
 
 /*Footer Information*/
