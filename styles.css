@@ -642,6 +642,103 @@ body {
   height: 800px; /* Adjust height as needed */
 }
 
+/* Collaboration Section Styling */
+#collaborations {
+    background-color: #fce4ec; /* Light pink background */
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+/* Headings */
+#collaborations h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #8e24aa; /* Purple color */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+#collaborations h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #ab47bc; /* Lighter purple for subheadings */
+    letter-spacing: 1px;
+}
+
+/* Paragraphs and Lists */
+#collaborations p, #collaborations ul {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#collaborations ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#collaborations li {
+    margin-bottom: 10px;
+}
+
+/* Blockquotes */
+#collaborations blockquote {
+    font-style: italic;
+    color: #7b1fa2; /* Dark purple */
+    border-left: 4px solid #ec407a; /* Pink border */
+    padding-left: 15px;
+    margin: 20px 0;
+    background-color: #f8bbd0; /* Light pink background */
+    padding: 10px 20px;
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+/* Buttons and Links */
+.apply-button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #e91e63; /* Bright pink */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: #d81b60; /* Slightly darker pink on hover */
+}
+
+#collaborations a {
+    color: #8e24aa; /* Purple links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#collaborations a:hover {
+    color: #6a1b9a; /* Darker purple on hover */
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #collaborations h2 {
+        font-size: 1.6em;
+    }
+
+    #collaborations h3 {
+        font-size: 1.3em;
+    }
+
+    .apply-button {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+}
 
 /*Footer Information*/
 footer {
