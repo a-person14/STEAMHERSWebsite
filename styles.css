@@ -502,6 +502,13 @@ body {
             padding: 0;
 }
 
+#over-the-year-program {
+            padding: 0;
+}
+
+#over-the-year-program ol{
+    list-style-type: none; /* Removes default numbering */
+}
 
 .contact-us {
     padding: 20px;
