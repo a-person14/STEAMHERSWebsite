@@ -86,6 +86,10 @@ nav ul.nav-links li.dropdown:hover .dropdown-content {
     display: block;
 }
 
+nav ul.nav-links li.dropdown:hover .dropdown-content:hover{
+    position: fixed;
+}
+
 nav ul.nav-links li.dropdown .dropdown-content {
     display: none;
     position: absolute;
@@ -692,6 +696,10 @@ body {
     margin-bottom: 15px;
     color: #ab47bc; /* Lighter purple for subheadings */
     letter-spacing: 1px;
+}
+
+#collaborations li a {
+    color: blue;
 }
 
 /* Paragraphs and Lists */
